@@ -6,7 +6,7 @@ This Program compares the given Poker Hands.
 <BR/>Royals: {Ace: A, King: K, Queen: Q, Jack: J, Ten: T}
 <BR/>A Poker Hand can be defined in the following way.
 <BR/>A Poker Hand should contain 5 Poker Cards. Each Poker Card should be represented with 2 characters.
-<BR/>Poker Card: HT - Heatrs 10
+<BR/>Poker Card: HT - Heart 10
 <BR/>Poker Card: D3 - Diamond 3
 <BR/>Poker Hand: D2, CA, SK, D5, H4 
 
