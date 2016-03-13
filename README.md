@@ -7,7 +7,7 @@ This Program compares the given Poker Hands.
 <BR/>A Poker Hand can be defined in the following way.
 <BR/>A Poker Hand should contain 5 Poker Cards. Each Poker Card should be represented with 2 characters.
 <BR/>Poker Card: HT - Heatrs 10
-<BR/>Poker Card: D3 - Diamong 3
+<BR/>Poker Card: D3 - Diamond 3
 <BR/>Poker Hand: D2, CA, SK, D5, H4 
 
 <h4>How To Run this Program</h4>
