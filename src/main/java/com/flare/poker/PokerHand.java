@@ -16,7 +16,7 @@ import java.util.Map;
  *
  * @author Srinivas Akula
  */
-public class PokerHand implements Comparable<PokerHand> {
+public class PokerHand {
 
     private final List<PokerCard> cards;
     private List<PokerCard> sortedCards;
@@ -186,11 +186,6 @@ public class PokerHand implements Comparable<PokerHand> {
      */
     public List<PokerCard> getCards() {
         return sortedCards;
-    }
-
-    @Override
-    public int compareTo(PokerHand otherHand) {
-        return this.category.getRank().compareTo(otherHand.getCategory().getRank());
     }
 
     public Category getCategory() {

@@ -15,14 +15,14 @@ import java.util.List;
 
 /**
  *
- * @author Srinivas Akula <srinivas.akula@thomsonreuters.com>
+ * @author Srinivas Akula
  */
 public class Poker {
 
     public static void main(String[] args) {
 
         if (args.length <= 0 || null == args[0]) {
-            System.out.println("Please give the input file location..");
+            System.err.println("Please give the input file location..");
             System.exit(1);
         }
         String content = null;
