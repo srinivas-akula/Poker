@@ -18,4 +18,4 @@ Download source.
 <BR/><B>java -jar target\poker.jar $input_file</B>
 
 <h4>Input File:</h4>
-Poker Hands should be seperated by ';'
+Each Poker Hands should be seperated by ';'
