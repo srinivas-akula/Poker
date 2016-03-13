@@ -29,7 +29,7 @@ public class PokerHand implements Comparable<PokerHand> {
      */
     public PokerHand(String pattern) {
 
-        String[] cardTokens = pattern.split(",");
+        String[] cardTokens = pattern.trim().split(",");
         if (cardTokens.length != 5) {
             throw new NotAValidPokerHandException(pattern + ": Not A valid Poker Hand.");
 
