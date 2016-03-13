@@ -9,5 +9,13 @@ This Program compares the given Poker Hands.
 <BR/>Poker Card: HT - Heatrs 10
 <BR/>Poker Card: D3 - Diamong 3
 <BR/>Poker Hand: D2, CA, SK, D5, H4 
-<BR/>Multiple Poker Hands should be seperated by ';' colon.
-<BR/>Example: DT, D3, D5, D8, D2; H9, D7, H9, H9, S7
+
+<h4>How To Run this Program</h4>
+Download source.
+<BR/>Run "mvn clean install" on the project.
+<BR/>From Command line goto target directory of the project.
+<BR/>And run 
+<BR/><B>java -jar target\poker.jar $input_file</B>
+
+<h4>Input File:</h4>
+Poker Hands should be seperated by ';'
