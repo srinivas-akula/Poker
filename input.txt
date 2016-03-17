@@ -25,4 +25,4 @@ DA, CK, D3, HA, SK;
 DT, CK, D3, H6, SK;
 ST, C7, S8, H6, C9;
 DT, CK, D3, H6, SQ;
-DT, CK, D7, H6, SQ;
+DT, CK, D7, H6, SQ
