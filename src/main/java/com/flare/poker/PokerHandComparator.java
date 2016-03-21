@@ -73,8 +73,8 @@ public class PokerHandComparator implements Comparator<PokerHand> {
      */
     private int comparePairsAndCards(PokerHand ph1, PokerHand ph2) {
 
-        List<Integer> list1 = ph1.getRanksByReverseOrder();
-        List<Integer> list2 = ph2.getRanksByReverseOrder();
+        List<Integer> list1 = ph1.getSortedRanks();
+        List<Integer> list2 = ph2.getSortedRanks();
         for (int i = 0; i < list1.size(); i++) {
             if (!list2.get(i).equals(list1.get(i))) {
                 return list2.get(i).compareTo(list1.get(i));

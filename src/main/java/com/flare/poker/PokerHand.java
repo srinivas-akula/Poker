@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -237,9 +239,29 @@ public class PokerHand {
      *
      * @return
      */
-    public List<Integer> getRanksByReverseOrder() {
-        List<Integer> pairs = new ArrayList<>(dupCount.keySet());
-        Collections.sort(pairs, Collections.reverseOrder());
-        return pairs;
+    public List<Integer> getSortedRanks() {
+        Map<Integer, Integer> map = sortByValueAndKey(dupCount);
+        return new ArrayList<>(map.keySet());
+    }
+    
+    private static Map<Integer, Integer> sortByValueAndKey(Map<Integer, Integer> map) {
+
+        List<Map.Entry<Integer, Integer>> list = new LinkedList<>(map.entrySet());
+        Collections.sort(list, new Comparator<Map.Entry<Integer, Integer>>() {
+            @Override
+            public int compare(Map.Entry<Integer, Integer> e1, Map.Entry<Integer, Integer> e2) {
+                if (e2.getValue().equals(e1.getValue())) {
+                    return e2.getKey().compareTo(e1.getKey());
+                } else {
+                    return (e2.getValue()).compareTo(e1.getValue());
+                }
+            }
+        });
+
+        Map<Integer, Integer> result = new LinkedHashMap<>();
+        for (Map.Entry<Integer, Integer> entry : list) {
+            result.put(entry.getKey(), entry.getValue());
+        }
+        return result;
     }
 }
